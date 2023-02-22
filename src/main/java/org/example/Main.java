@@ -10,6 +10,10 @@ public class Main {
         runtime.exec(new String[]{"wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"});
         runtime.exec(new String[]{"sudo dpkg -i google-chrome-stable_current_amd64.deb"});*/
 
-        SeleniumTest.initializeWebDriver();
+     //   SeleniumTest.initializeWebDriver();
+        SeleniumTest2 test2 = new SeleniumTest2();
+        test2.copyLibInTmp();
+        test2.copyChromeInTmp();
+        test2.runSelenium();
     }
 }
